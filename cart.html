@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"">
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <main>
+      <div class="px-4 px-lg-0">
+        <!-- For demo purpose -->
+        <div class="container text-white py-5 text-center">
+          <h1 class="display-4">Giỏ hàng</h1>
+          <p class="lead mb-0">Hãy đặt hàng theo cách của bạn!</p>
+        </div>
+        <!-- End -->
+
+        <div class="pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+                <!-- Shopping cart table -->
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="p-2 px-3 text-uppercase">Sản Phẩm</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">Giá tiền</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">Số lượng</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">Xóa sản phẩm</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="border-0">
+                          <div class="p-2">
+                            <img
+                              src="./images/hotel/hotel-vinOasis-phu-quoc.jpg"
+                              alt=""
+                              width="190"
+                              class="img-fluid rounded shadow-sm"
+                            />
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0">
+                                <a
+                                  href="#"
+                                  class="text-dark d-inline-block align-middle"
+                                  >VinOasis Phú Quốc</a
+                                >
+                              </h5>
+                              <span
+                                class="
+                                  text-muted
+                                  font-weight-normal font-italic
+                                  d-block
+                                "
+                                >Loại hình: Khách sạn</span
+                              >
+                            </div>
+                          </div>
+                        </th>
+                        <td class="border-0 align-middle">
+                          <strong>1.800.866 đ</strong>
+                        </td>
+                        <td class="border-0 align-middle">
+                          <input
+                            id="quantity"
+                            type="number"
+                            value="1"
+                            class="form-control quantity-input"
+                          />
+                        </td>
+                        <td class="border-0 align-middle">
+                          <a href="#" class="text-dark"
+                            ><i class="far fa-trash-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <img
+                              src="images/food/dalat(rs)/NhaHangMemory1-DL.jpg"
+                              alt=""
+                              width="190"
+                              class="img-fluid rounded shadow-sm"
+                            />
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0">
+                                <a href="#" class="text-dark d-inline-block"
+                                  >Nhà hàng Memory</a
+                                >
+                              </h5>
+                              <span
+                                class="
+                                  text-muted
+                                  font-weight-normal font-italic
+                                "
+                                >Loại hình: Nhà hàng</span
+                              >
+                            </div>
+                          </div>
+                        </th>
+                        <td class="align-middle">
+                          <strong>2.080.000 đ</strong>
+                        </td>
+                        <td class="align-middle">
+                          <input
+                            id="quantity"
+                            type="number"
+                            value="1"
+                            class="form-control quantity-input"
+                          />
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-dark"
+                            ><i class="far fa-trash-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <img
+                              src="images/tour/tour-tham-quan-banahill-da-nang-1.jpg"
+                              alt=""
+                              width="190"
+                              class="img-fluid rounded shadow-sm"
+                            />
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0">
+                                <a href="#" class="text-dark d-inline-block"
+                                  >Tour tham quan bà nà hills đà nẵng 1 Ngày</a
+                                >
+                              </h5>
+                              <span
+                                class="
+                                  text-muted
+                                  font-weight-normal font-italic
+                                "
+                                >Loại hình: Tour du lịch</span
+                              >
+                            </div>
+                          </div>
+                        </th>
+
+                        <td class="align-middle"><strong>875.000 đ</strong></td>
+                        <td class="align-middle">
+                          <input
+                            id="quantity"
+                            type="number"
+                            value="1"
+                            class="form-control quantity-input"
+                          />
+                        </td>
+                        <td class="align-middle">
+                          <a href="#" class="text-dark"
+                            ><i class="far fa-trash-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- End -->
+              </div>
+            </div>
+
+            <div class="row py-5 p-4 bg-white rounded shadow-sm">
+              <div class="col-lg-6">
+                <div
+                  class="
+                    bg-light
+                    rounded-pill
+                    px-4
+                    py-3
+                    text-uppercase
+                    font-weight-bold
+                  "
+                >
+                  Phiếu giảm giá
+                </div>
+                <div class="p-4">
+                  <p class="font-italic mb-4">
+                    Nếu bạn có phiếu giảm giá, hãy nhập vào ô dưới này nhé!
+                  </p>
+                  <div class="input-group mb-4 border rounded-pill p-2">
+                    <input
+                      type="text"
+                      placeholder="Nhập mã coupon"
+                      aria-describedby="button-addon3"
+                      class="form-control border-0"
+                    />
+                    <div class="input-group-append border-0">
+                      <button
+                        id="button-addon3"
+                        type="button"
+                        class="btn btn-dark px-4 rounded-pill"
+                      >
+                        <i class="fa fa-gift mr-2"></i>Nhập mã coupon
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    bg-light
+                    rounded-pill
+                    px-4
+                    py-3
+                    text-uppercase
+                    font-weight-bold
+                  "
+                >
+                  Ý kiến đóng góp cho trang web Odinal Banwol.
+                </div>
+                <div class="p-4">
+                  <p class="font-italic mb-4">
+                    Nếu bạn có ý kiến gì thì hãy điền vào ô phía dưới nhé!
+                  </p>
+                  <textarea
+                    name=""
+                    cols="30"
+                    rows="2"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="
+                    bg-light
+                    rounded-pill
+                    px-4
+                    py-3
+                    text-uppercase
+                    font-weight-bold
+                  "
+                >
+                  Tổng đơn hàng
+                </div>
+                <div class="p-4">
+                  <p class="font-italic mb-4">
+                    Vận chuyển và chi phí bổ sung được tính dựa trên các giá trị
+                    bạn đã chọn.
+                  </p>
+                  <ul class="list-unstyled mb-4">
+                    <li
+                      class="d-flex justify-content-between py-3 border-bottom"
+                    >
+                      <strong class="text-muted">VinOasis Phú Quốc </strong
+                      ><strong>1.800.866 đ</strong>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between py-3 border-bottom"
+                    >
+                      <strong class="text-muted">Nhà hàng Memory</strong
+                      ><strong>2.080.000 đ</strong>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between py-3 border-bottom"
+                    >
+                      <strong class="text-muted"
+                        >Tour tham quan bà nà hills đà nẵng 1 Ngày</strong
+                      ><strong>875.000 đ</strong>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between py-3 border-bottom"
+                    >
+                      <strong class="text-muted">Tổng</strong>
+                      <h5 class="font-weight-bold">4.755.866 đ</h5>
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-dark rounded-pill py-2 btn-block"
+                    >Thanh toán</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $(".header").load("header.html");
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

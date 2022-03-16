@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Footer - OB Travel</title>
+</head>
+<body>
+
+    <div class="spacer"></div>
+
+    <footer>
+
+        
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Chi nhánh</h3>
+                    <a href="#"> <i class="fas fa-map-marked-alt"></i> Việt Nam </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Đài Loan </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Hàn Quốc </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Nhật Bản </a>
+            </div>
+            
+            <div class="box">
+                <h3>Về OB Travel</h3>
+                <a href="#"> <i class="fas fa-chevron-circle-right"></i> Dịch vụ </a>
+                <a href="#"> <i class="fas fa-chevron-circle-right"></i> Danh mục đầu tư </a>
+                <a href="#"> <i class="fas fa-chevron-circle-right"></i> Giá trị </a>
+            </div>
+            
+            <div class="box">
+                <h3>Contact</h3>
+                <a href="#"> <i class="fas fa-phone"></i> Hỗ trợ </a>
+                <a href="#"> <i class="fas fa-phone"></i> Đặt Vé </a>
+                <a href="#"> <i class="fas fa-phone"></i> Quảng cáo </a>
+            </div>
+
+            <div class="box">
+                <h4>Nhận mã giảm giá</h4>
+                <p>Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn</p>
+                
+                <div class="form_email">
+                    <form action="">
+                        <input type="email" name="email" placeholder="Nhập địa chỉ mail" class="search-input">
+                        <button type="submit" class="btn">Đăng Ký</button>
+                    </form>
+                </div>    
+            </div>
+            
+        </div>
+        
+        <div class="footer-warp">
+            <div class="line"></div>
+            <div class="social-link">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="first-box">
+                <a href="#">Điều khoản $ Điều kiện</a>
+                <a href="#"> Chính sách bảo mật</a>
+            </div>
+            <div class="last-box">
+                <span>© 2014-2021 OB Travel. All Rights Reserved.</span>
+            </div>
+        </div>
+        
+    </section>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $( function () {
+            var height_diff = $( window ).height() - $( 'body' ).height();
+            if ( height_diff > 0 ) {
+                $( '#footer' ).css( 'margin-top', height_diff );
+}
+});
+    </script>
+
+
+</body>
+</html>
