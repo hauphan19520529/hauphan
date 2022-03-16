@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* body {
+  background-color: #00537e;
+  background: -webkit-linear-gradient(to right, #00537e, #3aa17e);
+  background: linear-gradient(to right, #00537e, #3aa17e);
+  min-height: 100vh;
+} */
+main {
+  background-color: #00537e;
+  background: -webkit-linear-gradient(to right, #00537e, #3aa17e);
+  background: linear-gradient(to right, #00537e, #3aa17e);
+  min-height: 100vh;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 1.2em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #0098a1;
+  border-color: #0098a1;
+}
+
+.container .table-responsive .align-middle .quantity-input {
+  margin: auto;
+  width: 5rem;
+}
+
+.container .table-responsive .align-middle .fa-trash-alt {
+  align-items: center;
+}
